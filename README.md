@@ -30,13 +30,13 @@ due to the features of this project many existing exploits do not
 work and as soon as the browser runs in a VM (see TODO) you should be
 well armed against malware. Nothing is 100% secure. Since I was
 brainwashed and my memories were taken from me
-(https://www.facebook.com/story.php?story_fbid=442622294748430&amp;id=100070019901989),
+(https://www.facebook.com/story.php?story_fbid=442622294748430&id=100070019901989),
 I am trying to implement this to the best of my knowledge and belief.
 Certainly there are many people who could do this better than me. I
 would be very happy about help, hints and feedback. I suspect/hope
 that in a few years you can use GrapheneOS (https://grapheneos.com)
 for everything. But this will certainly take a few more years
-(<a href="https://www.facebook.com/story.php?story_fbid=446825460994780&amp;id=100070019901989">https://www.facebook.com/story.php?story_fbid=446825460994780&amp;id=100070019901989</a>)
+(<a href="https://www.facebook.com/story.php?story_fbid=446825460994780&id=100070019901989">https://www.facebook.com/story.php?story_fbid=446825460994780&id=100070019901989</a>)
 
 <h1 id="Features">Features</h1>
 Musl, compiled with
@@ -69,7 +69,7 @@ Kernel, minimal KDE, Application for your daily work pre-installed
 
 I
 can't currently provide any images or binary distributions because I
-have to assume that my hardware is compromised (<a href="https://www.facebook.com/story.php?story_fbid=494203459590313&amp;id=100070019901989">https://www.facebook.com/story.php?story_fbid=494203459590313&amp;id=100070019901989</a>)
+have to assume that my hardware is compromised (<a href="https://www.facebook.com/story.php?story_fbid=494203459590313&id=100070019901989">https://www.facebook.com/story.php?story_fbid=494203459590313&id=100070019901989</a>)
 
 <h1 id="TODO">TODO</h1>
 <ul>
@@ -121,7 +121,7 @@ project has no connection to Pentoo Linux (https://pentoo.ch)
 	<li>03.05.2023
 	(German date format)
 	-&gt; 0 + 5 + 0 - 3 - 2 + 0 + 23 = 23!!!
-	(<a href="https://www.facebook.com/story.php?story_fbid=438210161856310&amp;id=100070019901989">https://www.facebook.com/story.php?story_fbid=438210161856310&amp;id=100070019901989</a>)
+	(<a href="https://www.facebook.com/story.php?story_fbid=438210161856310&id=100070019901989">https://www.facebook.com/story.php?story_fbid=438210161856310&id=100070019901989</a>)
 	
 </ul>
 <p align="center">We won't let our sense of humor get taken away from
