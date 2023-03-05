@@ -1,0 +1,13 @@
+diff --git a/libraries/lib-ipc/IPCClient.cpp b/libraries/lib-ipc/IPCClient.cpp
+index 8494bcc..555a2ec 100644
+--- a/libraries/lib-ipc/IPCClient.cpp
++++ b/libraries/lib-ipc/IPCClient.cpp
+@@ -20,6 +20,8 @@
+ #include "internal/socket_guard.h"
+ #include "internal/BufferedIPCChannel.h"
+ 
++typedef unsigned short u_short;
++
+ class IPCClient::Impl final
+ {
+    std::unique_ptr<BufferedIPCChannel> mChannel;

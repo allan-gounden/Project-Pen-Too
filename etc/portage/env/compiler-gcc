@@ -1,0 +1,25 @@
+CC="gcc"
+CXX="g++"
+
+HARDEN_FLAGS_GCC="-fstack-protector-all -D_FORTIFY_SOURCE=3 -fstack-clash-protection -fcf-protection=full -mshstk " 
+#-fPIC -fPIE
+#-fPIC 
+
+OPTIMIZATION_GCC="-pipe -march=native -O2"
+
+CFLAGS="${HARDEN_FLAGS_GCC} ${OPTIMIZATION_GCC}"
+CXXFLAGS="${HARDEN_FLAGS_GCC} ${OPTIMIZATION_GCC}"
+
+#LDFLAGS="-Wl,-O2 -Wl,--as-needed"
+LDFLAGS="-Wl,-O2 -Wl,--as-needed -Wl,-z,relro -Wl,-z,now"
+# -Wl,-z,defs #libapparmor
+#-Wl,-pie
+#LDFLAGS="-Wl,-O2 -Wl,--as-needed"
+#-fuse-ld=lld
+
+AR="gcc-ar"
+NM="gcc-nm"
+RANLIB="gcc-ranlib"
+
+# compile static because of llvm/clang libc++?
+#USE="static-libs"

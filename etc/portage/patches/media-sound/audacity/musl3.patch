@@ -1,0 +1,13 @@
+diff --git a/libraries/lib-ipc/internal/BufferedIPCChannel.cpp b/libraries/lib-ipc/internal/BufferedIPCChannel.cpp
+index 0af8394..e8f3cf4 100644
+--- a/libraries/lib-ipc/internal/BufferedIPCChannel.cpp
++++ b/libraries/lib-ipc/internal/BufferedIPCChannel.cpp
+@@ -12,6 +12,8 @@
+ 
+ #include "BufferedIPCChannel.h"
+ 
++#include <sys/select.h>
++
+ #include <cassert>
+ #include <cstring>
+ #include <mutex>

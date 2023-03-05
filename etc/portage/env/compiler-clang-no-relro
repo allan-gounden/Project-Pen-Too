@@ -1,0 +1,20 @@
+CC="clang"
+CXX="clang++"
+
+HARDEN_FLAGS_CLANG="-fstack-protector-all -D_FORTIFY_SOURCE=3 -fstack-clash-protection -fcf-protection=full -mshstk -fPIC" 
+# -fPIE
+
+MY_OPTIMIZATION="-pipe -march=native -O3 -flto=thin"
+
+CFLAGS="${HARDEN_FLAGS_CLANG} ${MY_OPTIMIZATION}"
+CXXFLAGS="${HARDEN_FLAGS_CLANG} ${MY_OPTIMIZATION}"
+
+LDFLAGS="-Wl,-O2 -Wl,--as-needed"
+# -Wl,-z,now
+#-Wl,-pie
+#LDFLAGS="${LDFLAGS}"
+
+AR="llvm-ar"
+#AS="llvm-as"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"

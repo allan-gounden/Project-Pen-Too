@@ -1,0 +1,102 @@
+
+*sys-devel/gcc
+*sys-boot/grub:2
+*app-crypt/sbsigntools
+*sys-kernel/gentoo-kernel-bin
+*sys-kernel/vanilla-sources
+*sys-kernel/linux-firmware
+*sys-kernel/dracut
+*sys-kernel/genkernel
+*app-shells/bash-completion
+*sys-power/acpid
+*sys-libs/timezone-data
+*net-misc/dhcpcd
+*net-misc/chrony
+*sys-process/cronie
+*sys-process/htop
+*sys-fs/cryptsetup
+*sys-fs/lvm2
+*app-portage/cfg-update
+*app-portage/gentoolkit
+*sec-policy/apparmor-profiles
+*sys-apps/apparmor-utils
+*sys-apps/firejail
+*app-crypt/sbctl
+*app-admin/sysklogd
+*sys-power/cpupower
+*net-vpn/openvpn
+*net-misc/bridge-utils
+*app-admin/doas
+*net-misc/openntpd
+
+*sys-apps/apply-default-acl
+
+*sys-auth/pam_u2f
+*sys-auth/yubikey-personalization-gui
+#*sys-auth/libyubikey
+#*app-crypt/yubikey-manager-qt
+
+
+##### GUI
+*gui-libs/display-manager-init
+*gui-libs/greetd
+
+###### KDE
+*kde-plasma/plasma-desktop
+*kde-plasma/systemsettings
+*kde-plasma/plasma-systemmonitor
+#*kde-plasma/plasma-integration
+*kde-plasma/plasma-nm
+*kde-plasma/polkit-kde-agent
+*kde-plasma/powerdevil
+*kde-apps/dolphin
+*kde-apps/dolphin-plugins-git
+#*kde-apps/dragon
++kde-apps/gwenview
+*kde-apps/kate
+*kde-apps/kate-addons
+*kde-apps/kcalc
+*kde-apps/kcron
+*kde-apps/kfind
+*kde-apps/konsole
+*kde-apps/kmix
+#*kde-apps/kgpg
+
+*kde-plasma/xdg-desktop-portal-kde
+
+#*kde-apps/ksystemlog #no gui under wayland
+
+#*kde-apps/
+#*kde-apps/
+#*kde-plasma/
+#*kde-plasma/
+#*kde-apps/dolphin-plugins-dropbox
+
+*kde-apps/kdenetwork-filesharing 
+
+#*kde-plasma/plasma-firewall #not working without systemd according to build logs
+
+### GUI APPS
+# Browser
+*www-client/firefox
+
+# Paint
+*media-gfx/krita
+
+# Audio
+*media-sound/qtractor
+*media-sound/audacity
+#*media-sound/ardour
+*media-sound/lmms
+*dev-vcs/qgit
+
+# Video
+*kde-apps/kdenlive
+*media-video/vlc
+
+# Office
+#*app-office/calligra
+*app-office/libreoffice
+
+# STUFF
+*app-emulation/virt-manager

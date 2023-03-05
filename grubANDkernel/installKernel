@@ -1,0 +1,13 @@
+grub-install --target=x86_64-efi --efi-directory=/efi --modules="tpm lvm luks2 part_gpt part_msdos msdospart crypto cryptodisk ext2 xfs f2fs gcry_rijndael gcry_sha256 gcry_sha512 pbkdf2 password_pbkdf2 keylayouts usb_keyboard at_keyboard"
+grub-mkimage -p /boot/grub -O x86_64-efi -c grub-pre.cfg -o ./grubx64.efi luks2 tpm part_gpt cryptodisk gcry_rijndael pbkdf2 password_pbkdf2 gcry_sha256 gcry_sha512 ext2 at_keyboard keylayouts --disable-shim-lock
+install -v grubx64.efi /efi/EFI/gentoo/grubx64.efi
+
+#kernel
+mount /boot
+genkernel kernel --kernel-config='/usr/src/linux/.config'
+dracut --kver=XXX -H -o crypt --force
+grub-mkconfig -o /boot/grub/grub.cfg
+sbctl sign /efi/EFI/gentoo/grubx64.efi
+sbctl sign /boot/vmlinuz-*
+
+

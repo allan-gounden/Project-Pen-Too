@@ -1,0 +1,74 @@
+# WARNING: Changing your CHOST is not something that should be done lightly.
+# Please consult https://wiki.gentoo.org/wiki/Changing_the_CHOST_variable before changing.
+CHOST="x86_64-gentoo-linux-musl"
+
+# NOTE: This stage was built with the bindist Use flag enabled
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C
+
+ACCEPT_LICENSE="@BINARY-REDISTRIBUTABLE"
+
+ACCEPT_KEYWORDS="~amd64"
+
+MAKEOPTS="-j17"
+
+CPU_FLAGS_X86="aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3"
+
+VIDEO_CARDS="amdgpu radeonsi"
+
+INPUT_DEVICES="synaptics libinput "
+
+CALLIGRA_FEATURES="stage"
+
+L10N="de de-DE en"
+
+PYTHON_TARGETS="-python3_10 python3_11"
+PYTHON_SINGLE_TARGET="-python3_10 python3_11"
+
+###### COMPILER
+
+### LLVM
+HARDEN_FLAGS="-fstack-protector-all -D_FORTIFY_SOURCE=3 -fstack-clash-protection -fcf-protection=full -mshstk "
+OPTIMIZATION_ARCH="-pipe -march=native"
+
+OPTIMIZATION_FLAGS_GCC="${OPTIMIZATION_ARCH} -O2"
+OPTIMIZATION_FLAGS_GCC_LTO="${OPTIMIZATION_FLAGS_GCC} -flto=17"
+
+OPTIMIZATION_FLAGS_CLANG="${OPTIMIZATION_ARCH} -O3"
+OPTIMIZATION_FLAGS_CLANG_LTO="${OPTIMIZATION_FLAGS_CLANG} -flto=thin" 
+
+CFLAGS="${OPTIMIZATION_FLAGS_CLANG_LTO} ${HARDEN_FLAGS}"
+CXXFLAGS="${OPTIMIZATION_FLAGS_CLANG_LTO} ${HARDEN_FLAGS}"
+
+LDFLAGS="${LDFLAGS} -Wl,-O2 -Wl,--as-needed -Wl,-z,relro -Wl,-z,now"
+
+
+### GO optimizations
+GOAMD64="v3"
+
+### RUST optimizations
+RUSTFLAGS="-C target-cpu=native -C opt-level=3"
+#RUSTFLAGS="-C target-cpu=native"
+#RUSTFLAGS="-C target-cpu=native -C link-arg=-Wl,-z,pack-relative-relocs"
+
+
+
+USE="-X -selinux -libedit qt5 gtk3 gtk
+pam policykit bash-completion caps
+wayland vulkan vulkan-overlay egl eglfs alsa jpeg svg png pulseaudio gles2 opengl 
+hwloc offload lm-sensors
+vaapi v4l
+apparmor elogind dbus udev threads
+zstd lzo lz4 lzma
+plasma qml
+networkmanager connman iwd semantic-desktop firewalld
+privsep
+nftables
+udisks lvm vdo
+-sftp mtp
+verify-sig ffmpeg
+pgo
+activities cups audit
+"

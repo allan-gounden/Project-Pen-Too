@@ -1,0 +1,25 @@
+diff --git a/src/tracks/playabletrack/wavetrack/ui/SpectrumView.cpp b/src/tracks/playabletrack/wavetrack/ui/SpectrumView.cpp
+index 034e2f6..6be6d73 100644
+--- a/src/tracks/playabletrack/wavetrack/ui/SpectrumView.cpp
++++ b/src/tracks/playabletrack/wavetrack/ui/SpectrumView.cpp
+@@ -691,10 +691,6 @@ void DrawClipSpectrum(TrackPanelDrawingContext &context,
+    // Bug 2389 - always draw at least one pixel of selection.
+    int selectedX = zoomInfo.TimeToPosition(selectedRegion.t0(), -leftOffset);
+ 
+-#ifdef _OPENMP
+-#pragma omp parallel for
+-#endif
+-
+    const NumberScale numberScale(settings.GetScale(minFreq, maxFreq));
+    int windowSize = mpSpectralData->GetWindowSize();
+    int hopSize = mpSpectralData->GetHopSize();
+@@ -706,6 +702,9 @@ void DrawClipSpectrum(TrackPanelDrawingContext &context,
+ 
+    // Generate combined hops and bins map for rendering
+    std::map<long long, std::set<int>> hopBinMap;
++#ifdef _OPENMP
++#pragma omp parallel for
++#endif
+    for(auto vecIter = dataHistory.begin(); vecIter != dataHistory.end(); ++vecIter){
+       for(const auto &hopMap: *vecIter){
+          for(const auto &binNum: hopMap.second)

@@ -1,0 +1,170 @@
+
+sys-kernel/linux-firmware redistributable savedconfig
+sys-boot/grub:2 device-mapper mount
+sys-fs/cryptmount mount cswap
+sys-fs/cryptsetup urandom reencrypt
+sys-fs/lvm2 lvm
+sys-apps/util-linux cryptsetup
+sys-apps/lm-sensors sensord
+sys-apps/dbus X
+sys-apps/hwloc udev
+sys-process/htop lm-sensors hwloc
+dev-libs/json-c threads
+sys-libs/libomp hwloc offload
+sys-devel/llvm binutils-plugin
+sys-devel/binutils -pgo #because of clang 
+sys-devel/clang-runtime sanitize
+#sys-devel/clang
+sys-devel/gcc sanitize graphite
+dev-lang/rust llvm-libunwind parallel-compiler system-llvm
+net-firewall/nftables xtables python json
+net-fs/cifs-utils acl
+net-misc/openssh security-key
+net-misc/rsync xxhash
+net-misc/spice-gtk usbredir mjpeg
+net-misc/networkmanager connection-sharing wifi -modemmanager -lto #-lto required for clang, we invoke lto anyways # dhcpcd according to build log not used?
+net-misc/connman openvpn wireguard
+net-wireless/crda gcrypt
+net-wireless/wpa_supplicant ap yuncommon-eap-types #better save then sorry
+net-wireless/iwd wired
+app-arch/libarchive blake2
+net-dns/dnsmasq script
+sys-libs/zlib minizip
+dev-libs/libevent malloc-replacement
+media-plugins/alsa-plugins pulseaudio
+media-libs/dav1d xxhash
+media-libs/libsndfile minimal
+media-libs/libglvnd -X
+media-libs/mesa X vaapi
+media-libs/libvpx postproc
+media-libs/libpng apng
+media-libs/libwebp opengl
+media-libs/phonon vlc
+media-libs/mlt xml ffmpeg sdl frei0r
+media-libs/libsdl2 X
+media-libs/sdl2-image webp
+media-libs/opencv contribdnn contrib webp -lto -gtk3 #-python_targets_python3_10
+media-sound/pulseaudio daemon
+media-sound/audacity id3tag mad ogg vamp sbsms
+media-video/ffmpeg cpudetection libdrm opengl libv4l v4l mp3 opus openh264 x264 x265 xvid vaapi libass X sdl
+app-emulation/qemu io-uring spice usb usbredir pulseaudio virgl virtfs lzo udev opengl
+sys-libs/libblockdev device-mapper bcache escrow kbd # dmraid
+
+dev-libs/libpcre2 pcre32
+
+media-gfx/pstoedit plotutils
+
+sys-apps/firejail contrib
+#dev-qt/qtprintsupport cups
+#app-text/ghostscript-gpl cups
+
+app-text/poppler boost
+
+
+###		GUI
+dev-qt/qtgui eglfs egl X
+dev-qt/qtcore icu
+x11-libs/libxkbcommon X
+x11-libs/libdrm video_cards_radeon
+x11-libs/cairo X #gles2-only #opengl #gles2-only gles3
+
+###	sway
+gui-wm/sway tray
+gui-libs/wlroots hwdata seatd udev
+gui-apps/waybar mpd network sndio tray wifi
+
+###	KDE Plasma ###
+kde-plasma/kwin lock -gles2-only
+kde-plasma/powerdevil brightness-control caps
+kde-frameworks/plasma X
+kde-frameworks/kwindowsystem X
+kde-frameworks/sonnet qml
+kde-frameworks/prison qml
+kde-frameworks/kconfig qml
+kde-frameworks/kitemmodels qml
+kde-frameworks/kglobalaccel X
+kde-frameworks/knotifications phonon
+kde-frameworks/knotifyconfig phonon
+kde-apps/kio-extras phonon samba
+#kde-apps/ksystemlog kdesu
+#kde-plasma/kde-cli-tools kdesu X
+
+media-video/vlc X eglfs matroska optimisememory v4l ogg vaapi #samba #mp3 mpg opus x264 x265
+www-client/firefox -X hwaccel system-png
+
+media-libs/libva X -opengl
+
+#x11-libs/gtk+ wayland
+#dev-libs/efl X drm harfbuzz fbcon -pdf #glib
+#app-text/poppler boost cairo
+
+#dev-libs/gmp cpudetection
+#sys-libs/gdbm berkdb
+
+app-text/xmlto text
+media-libs/libepoxy X
+x11-libs/gtk+ X #wayland
+x11-base/xwayland xcsecurity
+
+
+dev-python/PyQt5 widgets gui declarative network
+media-gfx/krita color-management gif jpegxl pdf webp qtmedia
+media-libs/opencolorio -opengl
+x11-libs/wxGTK X
+
+app-emulation/virt-manager gui
+
+app-office/libreoffice -gtk googledrive pdfimport kde
+dev-libs/xmlsec nss
+media-libs/harfbuzz icu
+
+#app-emulation/virt-manager python_single_target_python3_10
+#sys-kernel/genkernel python_single_target_python3_10
+#net-firewall/firewalld python_single_target_python3_10
+
+dev-libs/volume_key python_single_target_python3_10
+media-libs/lv2 python_single_target_python3_10
+
+media-sound/lmms mp3 soundio
+media-sound/qtractor mad
+
+
+app-office/calligra phonon
+
+net-fs/samba client
+
+#dev-python/numpy lapack
+#sci-libs/lapack lapacke
+
+#dev-qt/qtquickcontrols2 widgets
+#dev-qt/qtsingleapplication X
+
+##### Python 3.10
+dev-python/pypax python_targets_python3_10
+dev-python/installer  python_targets_python3_10
+dev-python/setuptools python_targets_python3_10
+#dev-python/setuptools_scm python_targets_python3_10
+dev-python/cython python_targets_python3_10
+dev-python/pyparsing python_targets_python3_10
+dev-python/six python_targets_python3_10
+dev-python/packaging python_targets_python3_10
+dev-python/isodate python_targets_python3_10
+dev-python/nspektr python_targets_python3_10
+dev-python/jaraco-text python_targets_python3_10
+dev-python/gpep517 python_targets_python3_10
+dev-python/inflect python_targets_python3_10
+dev-python/lxml python_targets_python3_10
+dev-python/rdflib python_targets_python3_10
+dev-python/html5lib python_targets_python3_10
+dev-python/certifi python_targets_python3_10
+dev-python/pydantic python_targets_python3_10
+dev-python/pygments python_targets_python3_10
+dev-python/autocommand python_targets_python3_10
+dev-python/wheel python_targets_python3_10
+dev-python/flit_core python_targets_python3_10
+dev-python/tomli python_targets_python3_10
+dev-python/more-itertools python_targets_python3_10
+dev-python/platformdirs python_targets_python3_10
+#dev-python/tomli python_targets_python3_10
+#dev-python/tomli python_targets_python3_10
+#dev-python/tomli python_targets_python3_10

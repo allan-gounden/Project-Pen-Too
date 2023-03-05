@@ -1,0 +1,29 @@
+diff --git a/basics.h b/basics.h.mod
+index 643d96e..0f23553 100644
+--- a/basics.h
++++ b/basics.h.mod
+@@ -49,6 +49,16 @@
+ 
+ #include "ladspa.h"
+ 
++#ifdef __clang__
++typedef int8_t			int8;
++typedef uint8_t			uint8;
++typedef int16_t			int16;
++typedef uint16_t		uint16;
++typedef int32_t			int32;
++typedef uint32_t		uint32;
++typedef int64_t			int64;
++typedef uint64_t		uint64;
++#else
+ typedef __int8_t			int8;
+ typedef __uint8_t			uint8;
+ typedef __int16_t			int16;
+@@ -57,6 +67,7 @@ typedef __int32_t			int32;
+ typedef __uint32_t		uint32;
+ typedef __int64_t			int64;
+ typedef __uint64_t		uint64;
++#endif
+ 
+ #define MIN_GAIN 1e-6 /* -120 dB */
+ /* smallest non-denormal 32 bit IEEE float is 1.18e-38 */

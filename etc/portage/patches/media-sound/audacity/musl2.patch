@@ -1,0 +1,13 @@
+diff --git a/libraries/lib-preferences/Prefs.h b/libraries/lib-preferences/Prefs.h
+index 9cee3c6..1f9c6e2 100644
+--- a/libraries/lib-preferences/Prefs.h
++++ b/libraries/lib-preferences/Prefs.h
+@@ -29,6 +29,8 @@
+ #ifndef __AUDACITY_PREFS__
+ #define __AUDACITY_PREFS__
+ 
++#include <sys/select.h>
++
+ #include <functional>
+ #include <set>
+ #include <vector>

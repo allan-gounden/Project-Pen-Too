@@ -1,0 +1,13 @@
+diff --git a/libraries/lib-ipc/IPCServer.cpp b/libraries/lib-ipc/IPCServer.cpp
+index af86c55..7f6be79 100644
+--- a/libraries/lib-ipc/IPCServer.cpp
++++ b/libraries/lib-ipc/IPCServer.cpp
+@@ -13,6 +13,8 @@
+ #include "IPCServer.h"
+ #include "IPCChannel.h"
+ 
++#include <sys/select.h>
++
+ #include <thread>
+ #include <mutex>
+ #include <stdexcept>

@@ -1,0 +1,26 @@
+sys-kernel/vanilla-sources ~amd64
+dev-libs/date ~amd64
+gui-apps/waybar ~amd64
+gui-apps/lavalauncher ~amd64
+kde-apps/dolphin-plugins-dropbox ~amd64
+sys-power/RyzenAdj ~amd64
+sys-power/powerstat ~amd64
+sys-power/tlp ~amd64
+
+media-sound/lmms ~amd64
+media-sound/qtractor ~amd64
+
+www-client/firefox ~amd64
+media-gfx/krita ~amd64
+
+net-misc/networkmanager -~amd64 #epx build 1.42 does not compile
+app-emulation/qemu -~amd64
+
+net-print/cups-filters -~amd64
+
+#gui-apps/tuigreet ~amd64
+
+#sys-apps/ckbcomp ~amd64
+#virtual/libcrypt ~amd64
+#sys-libs/musl ~amd64
+#sys-libs/glibc ~amd64
