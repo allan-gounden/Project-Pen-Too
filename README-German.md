@@ -28,12 +28,13 @@ Musl, Kompiliert mit CLANG und Hardened Flags mit Unterstützung für CET und Ha
 <ul>
 	<li>Follow
 	Befolgen Sie die Gentoo-Installationsanleitung aber nutzen Sie folgenden Tarball: stage3-amd64-musl-hardened-*.tar.xz
-	<li>TKopieren Sie im Anschluss die Project Pen Too Dateien in Ihr Root-Verzeichnis und selektieren das Profil „42-dontPanic“ (Achtung Sie akzeptieren hiermit die binary-redistributable Lizenz!)
+	<li>Installieren Sie LLVM
+	<li>Kopieren Sie im Anschluss die Project Pen Too Dateien in Ihr Root-Verzeichnis und selektieren das Profil „42-dontPanic“ (Achtung Sie akzeptieren hiermit die binary-redistributable Lizenz!)
 	<li>Führen Sie ein World-Update durch (emerge -av --update --deep --with-bdeps=y --newuse @world)
 	<li>Erstellen Sie Ihre eigene Kernelkonfiguration oder nutzen Sie den Gentoo-Kernel. Sie können als Basis meine Kernelkonfiguration (Asus GA502 - AMD Ryzen 4800HS) nutzen und diese um Ihre Hardware erweitern.
 </ul>
 
-Ich kann derzeit keine Images oder Binärdistribution zur Verfügung stellen da ich davon ausgehen muss das meine Hardware kompromittiert ist (Beispiel: https://www.facebook.com/story.php?story_fbid=494203459590313&id=100070019901989)
+Ich kann derzeit keine Images oder Binärdistribution zur Verfügung stellen da ich davon ausgehen muss das meine Hardware kompromittiert ist (Beispiel: https://www.facebook.com/story.php?story_fbid=494203459590313&id=100070019901989). Auf Anfrage könnte ich jedoch meinen Tarball zur Verfügung stellen.
 
 <h1 id="TODO">TODO</h1>
 <ul>
