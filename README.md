@@ -47,13 +47,11 @@ Kernel, minimal KDE, Application for your daily work pre-installed
 
 
 <h1 id="Installation">Installation</h1>
-<br/>
-
-
 <ul>
 	<li>Follow
 	the Gentoo installation instructions but
 	use the following tarball: stage3-amd64-musl-hardened-*.tar.xz
+	<li>Install LLVM
 	<li>Then
 	copy the Project Pen Too files into your root directory and select
 	the &quot;42-dontPanic&quot; profile (Caution: you hereby accept the
@@ -69,7 +67,7 @@ Kernel, minimal KDE, Application for your daily work pre-installed
 
 I
 can't currently provide any images or binary distributions because I
-have to assume that my hardware is compromised (<a href="https://www.facebook.com/story.php?story_fbid=494203459590313&id=100070019901989">https://www.facebook.com/story.php?story_fbid=494203459590313&id=100070019901989</a>)
+have to assume that my hardware is compromised (<a href="https://www.facebook.com/story.php?story_fbid=494203459590313&id=100070019901989">https://www.facebook.com/story.php?story_fbid=494203459590313&id=100070019901989</a>). But I could send my tarball on request.
 
 <h1 id="TODO">TODO</h1>
 <ul>
