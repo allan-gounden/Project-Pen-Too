@@ -76,7 +76,7 @@ have to assume that my hardware is compromised (<a href="https://www.facebook.co
 	<li>Apparmor-Profile
 	<li>WIFI
 	<li>Browser in
-	seperate VM (Qemu)
+	seperate VM (Qemu/KVM)
 	<li>CleanUp
 	profile, patches, etc.
 	<li>create
@@ -99,7 +99,7 @@ have to assume that my hardware is compromised (<a href="https://www.facebook.co
 
 <h1 id="Credits">Credits</h1>
 Thanks to everyone
-working on Gentoo and Linux. These people have been doing the work
+working on Gentoo, Linux and BSD. These people have been doing the work
 for decades from which we are now reaping the rewards.<br/>
 This
 project has no connection to Pentoo Linux (https://pentoo.ch)
