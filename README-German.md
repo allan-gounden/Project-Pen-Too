@@ -20,6 +20,11 @@ Ziel dieses Projekts ist es ein sicheres, einfach zu handhabendes, zuverlässige
 ACHTUNG: Das Projekt befindet sich in früher Alpha/Proof-Of-Concept Phase. Sicherlich gibt es hier noch einiges was man anders und besser machen kann. Ich habe die Vermutung das Aufgrund der Features dieses Projekts viele existierende Exploits nicht funktionieren und sobald der Browser in einer VM läuft (siehe TODO) sollte man gegen Maleware gut gewappnet sein. Nichts ist 100% sicher.
 Da ich eine Gehirnwäsche erhalten habe und mir man meine Erinnerungen genommen hat (https://www.facebook.com/story.php?story_fbid=442622294748430&id=100070019901989), versuche ich dies nach bestem wissen und gewissen umzusetzen. Sicherlich gibt es viele Menschen die dies besser könnten als ich. Über Hilfe, Hinweise und Feedback würde ich mich sehr freuen.
 Ich vermute/hoffe das man in ein paar Jahren GrapheneOS (https://grapheneos.com) für alles nutzen kann. Dies wird aber sicherlich noch einige Jahre dauern (https://www.facebook.com/story.php?story_fbid=446825460994780&id=100070019901989)
+</br></br>
+Es gibt viele Menschen, die Paranoia haben. Ob be- oder unbebründet, dies macht keinen Unterschied. Dieses Projekt könnte diesen Menschen helfen,
+vertrauen in ein sicheres und zuverlässiges Betriebssystem zu erhalten, welches sie täglich nutzen können.
+</br>
+Ein sicheres Betriebssystem ist eines der Grundpfeiler für eine sichere Kommunikation.
 
 <h1 id="Features">Features</h1>
 Musl, Kompiliert mit CLANG und Hardened Flags mit Unterstützung für CET und Hardware ShadowStack, LLVM libc++, GCC als Fallback, Firejail, Apparmor, gehärteter Kernel, minimales KDE, Applikationen für die tägliche Arbeit
