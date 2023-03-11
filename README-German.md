@@ -43,7 +43,7 @@ Ich kann derzeit keine Images oder Binärdistribution zur Verfügung stellen da 
 	<li>Apparmor-Profile
 	<li>WIFI
 	<li>Browser in
-	seperate VM (Qemu)
+	seperate VM (Qemu/KVM)
 	<li>CleanUp
 	profile, patches, etc.
 	<li>create
@@ -65,7 +65,7 @@ Ich kann derzeit keine Images oder Binärdistribution zur Verfügung stellen da 
 </ul>
 
 <h1 id="Credits">Credits</h1>
-Danke an alle welche an Gentoo und an Linux arbeiten. Diese Menschen haben über Dekaden die Arbeit geleistet von welcher wir jetzt die Früchte ernten.
+Danke an alle welche an Gentoo, Linux und BSD arbeiten. Diese Menschen haben über Dekaden die Arbeit geleistet von welcher wir jetzt die Früchte ernten.
 Dieses Projekt hat keine Verbindungen zu Pentoo Linux (https://pentoo.ch)
 
 <h1 id="Jokes">Jokes</h1>
