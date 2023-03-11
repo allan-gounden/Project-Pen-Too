@@ -37,6 +37,13 @@ would be very happy about help, hints and feedback. I suspect/hope
 that in a few years you can use GrapheneOS (https://grapheneos.com)
 for everything. But this will certainly take a few more years
 (<a href="https://www.facebook.com/story.php?story_fbid=446825460994780&id=100070019901989">https://www.facebook.com/story.php?story_fbid=446825460994780&id=100070019901989</a>)
+</br></br>
+There are a lot of people who have paranoia. If it is with reason or 
+without does not make a difference. This project might help those people
+in need to have trust in a secure and reliable operating system that 
+they can use daily.</br>
+Having a secure operating system is one of the pillars for having secure communications.
+
 
 <h1 id="Features">Features</h1>
 Musl, compiled with
