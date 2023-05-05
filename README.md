@@ -127,7 +127,21 @@ project has no connection to Pentoo Linux (https://pentoo.ch)
 	(German date format)
 	-&gt; 0 + 5 + 0 - 3 - 2 + 0 + 23 = 23!!!
 	(<a href="https://www.facebook.com/story.php?story_fbid=438210161856310&id=100070019901989">https://www.facebook.com/story.php?story_fbid=438210161856310&id=100070019901989</a>)
-	
+	<li>*tinfoil hat on*
+Maybe compile LLVM again after copying the files. So it compiles itself first? 
+https://m.youtube.com/watch?v=6WxJECOFg8w
+
+Maybe if more people would use the KISS principle, there would be more LOVE in the world? And because there is more LOVE there would be less EVIL? 🤣
+
+Do not forget LOVE is the ultimate weapon!
+
+THE SYSTEM does not use the KISS principle. It is just one big clusterfuck. You can not divide its problems into different categories if you want to change something. You have to change the whole at once and because it does not use the KISS principle it is not that hard to hack 😉
+But a lot of people are required. Hackers unite.
+
+Use your brain and heart.
+In balance.
+
+https://en.m.wikipedia.org/wiki/KISS_principle
 </ul>
 <p align="center">We won't let our sense of humor get taken away from
 us</p>
